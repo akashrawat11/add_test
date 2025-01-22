@@ -25,3 +25,6 @@ def test_negative_integers():
     with pytest.raises(ValueError):
         add("1,-2")
 
+def test_string():
+    with pytest.raises(ValueError):
+        add("1,2,three")

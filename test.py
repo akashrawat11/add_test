@@ -7,3 +7,7 @@ def test_positive_integers():
 
 def test_empty_string():
     assert add("") == 0
+
+def test_delimiter_only():
+    with pytest.raises(ValueError):
+        add(",")

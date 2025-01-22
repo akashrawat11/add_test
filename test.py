@@ -28,3 +28,7 @@ def test_negative_integers():
 def test_string():
     with pytest.raises(ValueError):
         add("1,2,three")
+
+def test_roman_numbers():
+    with pytest.raises(ValueError):
+        add("1,2,IX")

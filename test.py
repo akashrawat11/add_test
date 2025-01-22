@@ -20,3 +20,8 @@ def test_different_delimiters():
     assert add("1{2}3") == 6
     assert add("1;2:3") == 6
     assert add("1_2_3") == 6
+
+def test_negative_integers():
+    with pytest.raises(ValueError):
+        add("1,-2")
+
